@@ -1,0 +1,114 @@
+.tservises
+    &__body
+        background-color: #ececec
+        border-radius: 4px
+        padding: 14px 20px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__text-wrapper
+        margin: 10px 10px
+    &__title
+        padding: 5px 0px
+        font-size: 30px
+        line-height: 36px
+        color: #7f8c8c
+        +bold
+    &__desc
+        font-size: 13px
+        line-height: 20px
+        font-weight: 400
+        color: #777777
+    &__button
+        min-width: 200px
+        padding: 15px 40px
+        margin: 10px 10px
+        border-radius: 6px
+        font-size: 20px
+        line-height: 24px
+        font-weight: 600
+        color: #ffffff
+        background-color: $color-secondary1
+        text-transform: uppercase
+        border-bottom: 4px solid $color-secondary2
+        cursor: pointer
+        &:hover
+            background-color: $color-secondary2
+        &-wrapper
+            margin: 10px 0px
+
+.servises
+    padding: 50px 0
+    &__body
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__item
+        width: 270px
+
+        &-block
+            padding: 17px
+            height: 310px
+            background-color: #f8f8f8
+            border-radius: 4%
+            border-bottom: 4px solid #e5e6e6
+            cursor: pointer
+            &:hover
+                background-color: #ffffff
+                transition: 0.2s
+            &:hover .servises__item-icon
+                color: #e2534b
+                transition: 0.2s
+        &-icon
+            padding: 17px
+            text-align: center
+            font-size: 60px
+            line-height: 7px
+            color: #62bdbd
+        &-title
+            text-align: center
+            font-size: 16px
+            line-height: 19px
+            color: #7f8c8c
+            +bold
+        &-description
+            padding: 36px 0
+            text-align: center
+            font-size: 13px
+            line-height: 20px
+            color: #777777
+            +normal
+    &__button
+        position: relative
+        bottom: 25px
+        text-align: center
+        & span
+            display: inline-block
+            width: 200px
+            height: 50px
+            background-color: $color-secondary3
+            border-bottom: 4px solid $color-secondary4
+            border-radius: 6px
+            color: #ffffff
+            text-align: center
+            padding-top: 15px
+            cursor: pointer
+            &:hover
+                background-color: $color-secondary1
+                border-bottom: 4px solid $color-secondary2
+                transition: 0.2s
+
+@media (max-width: 1166px)
+    .servises
+        &__body
+
+@media (max-width: 882px)
+    .servises
+        &__body
+            justify-content: space-around
+
+@media (max-width: 596px)
+    .servises
+        &__body
+            flex-direction: column
+            align-items: center

@@ -1,0 +1,49 @@
+.section-banner
+    background-color: #7f8c8c
+    min-height: 500px
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    &__body
+        display: flex
+        flex-direction: column
+        &-title
+            display: inline-flex
+            padding: 2px 10px
+            margin: 5px auto 5px auto
+            border-radius: 5px
+            font-size: 50px
+            line-height: 56px
+            font-weight: 800
+            color: #ffffff
+            background-color: $color-secondary2
+            text-transform: uppercase
+            text-align: center
+            +bold
+        &-subtitle
+            display: flex
+            max-width: 470px
+            padding: 13px 30px
+            margin: 5px auto 5px auto
+            border-radius: 5px
+            text-align: center
+            font-size: 16px
+            line-height: 25px
+            font-weight: 400
+            color: #ffffff
+            background-color: #555
+            text-align: center
+            +normal
+    &__dots
+        background-color: #f3f3f3
+        text-align: center
+        &-item
+            display: inline-block
+            width: 60px
+            height: 5px
+            background-color: #b0b8b9
+            margin: 20px 2px
+            &.active
+                background-color: #e2534b

@@ -1,0 +1,46 @@
+body
+    +normal
+.wrapper
+    display: flex
+    flex-direction: column
+    min-height: 100%
+
+.container
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 20px
+
+main
+    flex: 1 1 auto
+.main
+    background-color: #f3f3f3
+
+/* Large desktops and laptops */
+@media (min-width: 1200px)
+    .main
+        background-color: #f3f3f3
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px)
+    .main
+        background-color: #f3f3f3
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px)
+    .main
+        background-color: #f3f3f3
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px)
+    .main
+        background-color: #f3f3f3
+
+/* Portrait phones and smaller */
+@media (max-width: 480px)
+    .main
+        background-color: #f3f3f3
+
+/* Iphone 5 */
+@media (max-width: 320px)
+    .main
+        background-color: #f3f3f3
