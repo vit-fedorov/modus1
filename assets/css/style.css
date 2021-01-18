@@ -375,6 +375,11 @@ main {
   font-weight: 600;
 }
 
+.footer__copyright {
+  background: #62b9b0;
+  padding: 20px 0;
+}
+
 .section-banner {
   background-color: #7f8c8c;
   min-height: 500px;
@@ -630,4 +635,32 @@ main {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.why {
+  background: #f3f3f3;
+}
+
+.why__body {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.why__title {
+  font-size: 40px;
+  line-height: 48px;
+  color: #e1524b;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.why__description {
+  font-size: 13px;
+  line-height: 20px;
+  color: #777777;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
