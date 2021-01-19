@@ -799,6 +799,8 @@ main {
 }
 
 .why__say-text {
+  z-index: 2;
+  position: relative;
   background-color: #d2e0e0;
   padding: 10px;
   font-size: 13px;
@@ -825,8 +827,9 @@ main {
 }
 
 .why__say-name::before {
+  z-index: 1;
   position: relative;
-  top: 25px;
+  top: 15px;
   left: 20px;
   content: "";
   margin-right: 30px;
@@ -838,7 +841,6 @@ main {
 
 .why__center-body {
   width: 50%;
-  min-width: 450px;
 }
 
 .why__center-body p {
@@ -876,7 +878,7 @@ main {
 
 @media screen and (max-width: 780px) {
   .why__images-body {
-    max-width: 100%;
+    width: 100%;
   }
 }
 

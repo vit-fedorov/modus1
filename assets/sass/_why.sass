@@ -83,6 +83,8 @@
         margin-bottom: 30px
         +bold
     &__say-text
+        z-index: 2
+        position: relative
         background-color: $color-light
         padding: 10px
         font-size: 13px
@@ -102,8 +104,9 @@
         text-align: left
         +semibold
         &::before
+            z-index: 1
             position: relative
-            top: 25px
+            top: 15px
             left: 20px
             content: ""
             margin-right: 30px
@@ -114,7 +117,6 @@
 
     &__center-body
         width: 50%
-        min-width: 450px
         & p
             font-size: 13px
             line-height: 24px
@@ -127,6 +129,7 @@
                 color: #e1524b
                 &:hover
                     text-decoration: none
+
 @media (max-width: 991px)
     .why
         &__choose-body
@@ -142,7 +145,7 @@
 @media screen and ( max-width: 780px )
     .why
         &__images-body
-            max-width: 100%
+            width: 100%
         &__images-item
             &:nth-child(1)
                 & img
