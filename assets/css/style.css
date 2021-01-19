@@ -863,10 +863,10 @@ main {
 
 @media (max-width: 991px) {
   .why__images-item:nth-child(1) img {
-    opacity: 0.8;
+    opacity: 0.6;
   }
   .why__images-item:nth-child(3) img {
-    opacity: 0.8;
+    opacity: 0.6;
   }
   .why__us {
     -webkit-box-orient: vertical;
