@@ -14,3 +14,33 @@
         line-height: 20px
         color: #777777
         +normal
+    &__images-body
+        width: 100%
+        margin: 67px 0
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__images-item
+        &:nth-child(1)
+            z-index: 1
+            & img
+                position: absolute
+                transform: translate(0%, -50%)
+                max-width: 50%
+        &:nth-child(2)
+            margin: 0 auto
+            z-index: 2
+            & img
+                position: static
+                transform: translate(0, 0)
+                max-width: 100%
+        &:nth-child(3)
+            z-index: 1
+            & img
+                position: absolute
+                transform: translate(-100%, -50%)
+                max-width: 50%
+@media screen and ( max-width: 780px )
+    .why
+        &__images-body
+            max-width: 100%
