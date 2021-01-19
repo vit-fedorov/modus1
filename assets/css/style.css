@@ -90,6 +90,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
+  font-family: 'Open Sans Semibold';
+  src: url("../fonts/opensanssemibold.eot");
+  src: url("../fonts/opensanssemibold.eot?#iefix") format("embedded-opentype"), url("../fonts/opensanssemibold.woff") format("woff"), url("../fonts/opensanssemibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Open Sans Light';
   src: url("../fonts/opensanslight.eot");
   src: url("../fonts/opensanslight.eot?#iefix") format("embedded-opentype"), url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.ttf") format("truetype");
@@ -214,8 +222,8 @@ main {
   font-weight: 800;
   color: #ffffff;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-family: 'Open Sans Semibold', sans-serif;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -346,8 +354,8 @@ main {
   font-weight: 800;
   color: #ffffff;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-family: 'Open Sans Semibold', sans-serif;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -365,14 +373,18 @@ main {
   padding: 19px 0;
   font-size: 20px;
   line-height: 36px;
+  font-family: 'Open Sans Semibold', sans-serif;
   font-weight: 600;
+  font-style: normal;
 }
 
 .footer__body-posts {
   padding: 19px 0;
   font-size: 20px;
   line-height: 36px;
+  font-family: 'Open Sans Semibold', sans-serif;
   font-weight: 600;
+  font-style: normal;
 }
 
 .footer__copyright {
@@ -420,8 +432,8 @@ main {
   background-color: #e2534b;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-family: 'Open Sans Semibold', sans-serif;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -485,8 +497,8 @@ main {
   font-size: 30px;
   line-height: 36px;
   color: #7f8c8c;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-family: 'Open Sans Semibold', sans-serif;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -575,8 +587,8 @@ main {
   font-size: 16px;
   line-height: 19px;
   color: #7f8c8c;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-family: 'Open Sans Semibold', sans-serif;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -651,8 +663,8 @@ main {
   line-height: 48px;
   color: #e1524b;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-family: 'Open Sans Semibold', sans-serif;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -680,6 +692,7 @@ main {
 }
 
 .why__images-item:nth-child(1) {
+  max-width: 370px;
   z-index: 1;
 }
 
@@ -688,12 +701,13 @@ main {
   -webkit-transform: translate(0%, -50%);
       -ms-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
-  max-width: 50%;
+  max-height: 30%;
 }
 
 .why__images-item:nth-child(2) {
   margin: 0 auto;
   z-index: 2;
+  max-width: 570px;
 }
 
 .why__images-item:nth-child(2) img {
@@ -705,6 +719,7 @@ main {
 }
 
 .why__images-item:nth-child(3) {
+  max-width: 370px;
   z-index: 1;
 }
 
@@ -713,11 +728,20 @@ main {
   -webkit-transform: translate(-100%, -50%);
       -ms-transform: translate(-100%, -50%);
           transform: translate(-100%, -50%);
-  max-width: 50%;
+  max-height: 30%;
 }
 
 @media screen and (max-width: 780px) {
   .why__images-body {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 596px) {
+  .why__images-item:nth-child(1) img {
+    max-width: 50%;
+  }
+  .why__images-item:nth-child(3) img {
+    max-width: 50%;
   }
 }

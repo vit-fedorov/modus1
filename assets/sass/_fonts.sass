@@ -13,6 +13,13 @@
     font-style: normal
 
 @font-face
+    font-family: 'Open Sans Semibold'
+    src: url('../fonts/opensanssemibold.eot')
+    src: url('../fonts/opensanssemibold.eot?#iefix') format('embedded-opentype'), url('../fonts/opensanssemibold.woff') format('woff'), url('../fonts/opensanssemibold.ttf') format('truetype')
+    font-weight: 600
+    font-style: normal
+
+@font-face
     font-family: 'Open Sans Light'
     src: url('../fonts/opensanslight.eot')
     src: url('../fonts/opensanslight.eot?#iefix') format('embedded-opentype'), url('../fonts/opensanslight.woff') format('woff'), url('../fonts/opensanslight.ttf') format('truetype')
@@ -29,6 +36,11 @@
 @mixin bold
     font-family: 'Open Sans', sans-serif
     font-weight: 700
+    font-style: normal
+
+@mixin semibold
+    font-family: 'Open Sans Semibold', sans-serif
+    font-weight: 600
     font-style: normal
 
 @mixin normal
