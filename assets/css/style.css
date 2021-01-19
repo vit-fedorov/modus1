@@ -703,7 +703,7 @@ main {
   -webkit-transform: translate(0%, -50%);
       -ms-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
-  height: 30%;
+  max-height: 30%;
 }
 
 .why__images-item:nth-child(2) {
@@ -730,7 +730,7 @@ main {
   -webkit-transform: translate(-100%, -50%);
       -ms-transform: translate(-100%, -50%);
           transform: translate(-100%, -50%);
-  height: 30%;
+  max-height: 30%;
 }
 
 .why__us {
@@ -863,10 +863,10 @@ main {
 
 @media (max-width: 991px) {
   .why__images-item:nth-child(1) img {
-    opacity: 0.6;
+    opacity: 0.8;
   }
   .why__images-item:nth-child(3) img {
-    opacity: 0.6;
+    opacity: 0.8;
   }
   .why__us {
     -webkit-box-orient: vertical;
