@@ -130,8 +130,19 @@
                 &:hover
                     text-decoration: none
 
-@media (max-width: 991px)
+@media ( max-width: 991px )
     .why
+        &__images-item
+            &:nth-child(1)
+                & img
+                    opacity: 0.8
+            &:nth-child(2)
+                & img
+            &:nth-child(3)
+                & img
+                    opacity: 0.8
+        &__us
+            flex-flow: column wrap
         &__choose-body
             width: 100%
         &__center-body
@@ -142,7 +153,7 @@
             width: 100%
         &__say-text
 
-@media screen and ( max-width: 780px )
+@media ( max-width: 780px )
     .why
         &__images-body
             width: 100%
@@ -153,7 +164,7 @@
                 & img
             &:nth-child(3)
                 & img
-@media screen and ( max-width: 596px )
+@media ( max-width: 596px )
     .why
         &__images-body
         &__images-item

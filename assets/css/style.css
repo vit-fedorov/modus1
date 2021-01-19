@@ -862,6 +862,18 @@ main {
 }
 
 @media (max-width: 991px) {
+  .why__images-item:nth-child(1) img {
+    opacity: 0.8;
+  }
+  .why__images-item:nth-child(3) img {
+    opacity: 0.8;
+  }
+  .why__us {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
   .why__choose-body {
     width: 100%;
   }
@@ -876,13 +888,13 @@ main {
   }
 }
 
-@media screen and (max-width: 780px) {
+@media (max-width: 780px) {
   .why__images-body {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 596px) {
+@media (max-width: 596px) {
   .why__images-item:nth-child(1) img {
     max-width: 50%;
   }
