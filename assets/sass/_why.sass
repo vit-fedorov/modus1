@@ -43,6 +43,102 @@
                 position: absolute
                 transform: translate(-100%, -50%)
                 max-height: 30%
+
+    &__us
+        display: flex
+        justify-content: space-between
+        flex-flow: row wrap
+
+    &__choose-body
+        width: 25%
+        min-width: 225px
+        text-align: left
+        & p
+            font-size: 16px
+            line-height: 19px
+            color: #7f8c8c
+            margin-bottom: 30px
+            +bold
+        & ul
+            & li
+                font-size: 13px
+                line-height: 26px
+                font-weight: 400
+                color: #777777
+                &::before
+                    content: "\f061"
+                    margin-right: 5px
+                    font-size: 12px
+                    line-height: 1px
+                    font-weight: 900
+                    color: #e1524b
+                    +icon
+    &__say-body
+        width: 25%
+        min-width: 225px
+    &__say-title
+        font-size: 16px
+        line-height: 19px
+        color: #7f8c8c
+        margin-bottom: 30px
+        +bold
+    &__say-text
+        background-color: $color-light
+        padding: 10px
+        font-size: 13px
+        line-height: 24px
+        font-weight: 400
+        font-style: italic
+        color: #777777
+        text-align: left
+        & span
+            display: block
+            font-style: normal
+
+    &__say-name
+        font-size: 16px
+        line-height: 30px
+        color: #777777
+        text-align: left
+        +semibold
+        &::before
+            position: relative
+            top: 25px
+            left: 20px
+            content: ""
+            margin-right: 30px
+            width: 0
+            height: 0
+            border-top: 30px solid $color-light
+            border-left: 20px solid transparent
+
+    &__center-body
+        width: 50%
+        min-width: 450px
+        & p
+            font-size: 13px
+            line-height: 24px
+            font-weight: 400
+            text-align: left
+            color: #777777
+            padding: 0 10px
+            & a
+                text-decoration: underline
+                color: #e1524b
+                &:hover
+                    text-decoration: none
+@media (max-width: 991px)
+    .why
+        &__choose-body
+            width: 100%
+        &__center-body
+            width: 100%
+            & p
+                padding: 40px 0px
+        &__say-body
+            width: 100%
+        &__say-text
+
 @media screen and ( max-width: 780px )
     .why
         &__images-body

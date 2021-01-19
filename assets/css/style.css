@@ -370,6 +370,7 @@ main {
 }
 
 .footer__body-nav {
+  color: #555555;
   padding: 19px 0;
   font-size: 20px;
   line-height: 36px;
@@ -379,6 +380,7 @@ main {
 }
 
 .footer__body-posts {
+  color: #555555;
   padding: 19px 0;
   font-size: 20px;
   line-height: 36px;
@@ -729,6 +731,147 @@ main {
       -ms-transform: translate(-100%, -50%);
           transform: translate(-100%, -50%);
   max-height: 30%;
+}
+
+.why__us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.why__choose-body {
+  width: 25%;
+  min-width: 225px;
+  text-align: left;
+}
+
+.why__choose-body p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #7f8c8c;
+  margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.why__choose-body ul li {
+  font-size: 13px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #777777;
+}
+
+.why__choose-body ul li::before {
+  content: "\f061";
+  margin-right: 5px;
+  font-size: 12px;
+  line-height: 1px;
+  font-weight: 900;
+  color: #e1524b;
+  font-family: "Font Awesome 5 Pro";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+.why__say-body {
+  width: 25%;
+  min-width: 225px;
+}
+
+.why__say-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #7f8c8c;
+  margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.why__say-text {
+  background-color: #d2e0e0;
+  padding: 10px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #777777;
+  text-align: left;
+}
+
+.why__say-text span {
+  display: block;
+  font-style: normal;
+}
+
+.why__say-name {
+  font-size: 16px;
+  line-height: 30px;
+  color: #777777;
+  text-align: left;
+  font-family: 'Open Sans Semibold', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.why__say-name::before {
+  position: relative;
+  top: 25px;
+  left: 20px;
+  content: "";
+  margin-right: 30px;
+  width: 0;
+  height: 0;
+  border-top: 30px solid #d2e0e0;
+  border-left: 20px solid transparent;
+}
+
+.why__center-body {
+  width: 50%;
+  min-width: 450px;
+}
+
+.why__center-body p {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+  color: #777777;
+  padding: 0 10px;
+}
+
+.why__center-body p a {
+  text-decoration: underline;
+  color: #e1524b;
+}
+
+.why__center-body p a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .why__choose-body {
+    width: 100%;
+  }
+  .why__center-body {
+    width: 100%;
+  }
+  .why__center-body p {
+    padding: 40px 0px;
+  }
+  .why__say-body {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 780px) {
