@@ -5,18 +5,21 @@ footer
     font-size: 14px
     line-height: 21px
     +normal
-    &__body
+    &__wrapper
         display: flex
         justify-content: space-between
         flex-wrap: wrap
+        padding: 40px 0
+    &__main
+        &-body
+            padding-right: 20px
         &-title
-            padding: 19px 0
-            font-family: OpenSans
             font-size: 30px
             line-height: 36px
             font-weight: 800
             color: #ffffff
             text-transform: uppercase
+            margin-bottom: 20px
             +semibold
             & span
                 font-size: 18px
@@ -24,18 +27,72 @@ footer
                 color: #ffffff
                 padding-left: 4px
                 +normal
-        &-nav
+        &-description
+            margin-bottom: 20px
+            font-size: 13px
+            line-height: 23px
+            font-weight: 400
+            color: #ffffff
+            +normal
+    &__nav
+        &-body
+            padding: 0 40px
+            ul
+            li
+                &::before
+                    content: "\f105"
+                    margin-right: 10px
+                    font-size: 13px
+                    line-height: 23px
+                    +icon
+            a
+                text-decoration: none
+                color: #ffffff
+                &:hover
+                    text-decoration: underline
+
+        &-title
             color: #555555
-            padding: 19px 0
             font-size: 20px
             line-height: 36px
+            margin-bottom: 20px
             +semibold
-        &-posts
+    &__posts
+        &-body
+            padding-left: 20px
+            ul
+            li
+                &::before
+                    content: "\f105"
+                    margin-right: 10px
+                    font-size: 13px
+                    line-height: 23px
+                    +icon
+            a
+                text-decoration: none
+                color: #ffffff
+                &:hover
+                    text-decoration: underline
+        &-title
             color: #555555
-            padding: 19px 0
             font-size: 20px
             line-height: 36px
+            margin-bottom: 20px
             +semibold
     &__copyright
         background: $color-secondary4
         padding: 20px 0
+
+@media (max-width: 480px)
+    .footer
+        &__main
+            &-body
+                padding: 20px 0px
+        &__nav
+            &-body
+                text-align: center
+                padding: 20px 0px
+        &__posts
+            &-body
+                text-align: center
+                padding: 20px 0px
