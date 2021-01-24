@@ -20,6 +20,13 @@
     font-style: normal
 
 @font-face
+    font-family: 'Open Sans Semibold Italic'
+    src: url('../fonts/opensanssemibolditalic.eot')
+    src: url('../fonts/opensanssemibolditalic.eot?#iefix') format('embedded-opentype'), url('../fonts/opensanssemibolditalic.woff') format('woff'), url('../fonts/opensanssemibolditalic.ttf') format('truetype')
+    font-weight: 600
+    font-style: italic
+
+@font-face
     font-family: 'Open Sans Light'
     src: url('../fonts/opensanslight.eot')
     src: url('../fonts/opensanslight.eot?#iefix') format('embedded-opentype'), url('../fonts/opensanslight.woff') format('woff'), url('../fonts/opensanslight.ttf') format('truetype')
@@ -42,6 +49,11 @@
     font-family: 'Open Sans Semibold', sans-serif
     font-weight: 600
     font-style: normal
+
+@mixin semibold-italic
+    font-family: 'Open Sans Semibold Italic', sans-serif
+    font-weight: 600
+    font-style: italic
 
 @mixin normal
     font-family: 'Open Sans', sans-serif

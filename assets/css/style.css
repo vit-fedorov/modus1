@@ -98,6 +98,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
+  font-family: 'Open Sans Semibold Italic';
+  src: url("../fonts/opensanssemibolditalic.eot");
+  src: url("../fonts/opensanssemibolditalic.eot?#iefix") format("embedded-opentype"), url("../fonts/opensanssemibolditalic.woff") format("woff"), url("../fonts/opensanssemibolditalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'Open Sans Light';
   src: url("../fonts/opensanslight.eot");
   src: url("../fonts/opensanslight.eot?#iefix") format("embedded-opentype"), url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.ttf") format("truetype");
@@ -386,8 +394,8 @@ main {
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 20px;
-  font-family: 'Open Sans Semibold', sans-serif;
-  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -405,11 +413,19 @@ main {
   margin-bottom: 20px;
   font-size: 13px;
   line-height: 23px;
-  font-weight: 400;
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.footer__main-contacts p span {
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  font-family: 'Open Sans Semibold Italic', sans-serif;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .footer__nav-body {
