@@ -23,14 +23,14 @@ h6, .h6
     font-size: 1rem
     font-weight: bold
 
-a
-    color: #ffffff
-    text-decoration: none
-    &:hover
-        color: #ffffff
-        text-decoration: underline red
-    &:active
-        color: red
+// a
+//     color: #ffffff
+//     text-decoration: none
+//     &:hover
+//         color: #ffffff
+//         text-decoration: underline red
+//     &:active
+//         color: red
 
 .flex
     display: flex
@@ -41,3 +41,30 @@ a
 
 .spanis
     +light
+
+.page
+    &-headline
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        min-height: 80px
+        padding: 10px 0
+        &-wrapper
+            min-height: 80px
+            background-color: #ececec
+
+    &__title
+        display: flex
+        padding: 10px 0
+        font-size: 20px
+        line-height: 24px
+        color: #7f8c8c
+        +semibold
+    &__breadcrumbs
+        display: flex
+        padding: 10px 0
+        font-size: 12px
+        line-height: 24px
+        color: #7f8c8c
+        +normal
