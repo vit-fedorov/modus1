@@ -1,36 +1,5 @@
 .typography
-    background: $color-light
-    &-full
-        padding: 40px 0
-        &__title
-            padding: 0px 0px 20px 0px
-            font-size: 16px
-            line-height: 19px
-            color: #7f8c8c
-            +bold
-        &__text
-            font-size: 14px
-            line-height: 22px
-            color: #7f8c8c
-            +normal
-    &-two
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
-        padding: 40px 0
-        &__item
-            width: 50%
-        &__title
-            padding: 0px 0px 20px 0px
-            font-size: 16px
-            line-height: 19px
-            color: #7f8c8c
-            +bold
-        &__text
-            font-size: 14px
-            line-height: 22px
-            color: #7f8c8c
-            +normal
+    // background: $color-light
     &__body
         padding: 20px 0
     &__item
@@ -41,8 +10,86 @@
         line-height: 19px
         color: #7f8c8c
         +bold
-    &__text
+    &__content
         font-size: 14px
         line-height: 22px
         color: #7f8c8c
         +normal
+
+        & ul
+            & li
+                font-size: 13px
+                line-height: 26px
+                font-weight: 400
+                color: #777777
+                &::before
+                    content: "♦"
+                    margin-right: 5px
+                    font-size: 12px
+                    line-height: 1px
+                    font-weight: 900
+                    color: #61b8b0
+                    +icon
+        & .list-arrow
+            & li
+                &::before
+                    content: "\f061"
+                    color: #e1524b
+                    +icon
+        & .list-times
+            & li
+                &::before
+                    content: "\f00d"
+                    color: #e1524b
+                    +icon
+        & .list-circle-arrow
+            & li
+                &::before
+                    content: "\f138"
+                    color: #61b8b0
+                    +icon
+        & .list-check
+            & li
+                &::before
+                    content: "\f00c"
+                    color: #61b8b0
+                    +icon
+.infobox
+    padding: 20px 0
+    &__body
+        background-color: #ececec
+        border-radius: 4px
+        padding: 14px 20px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__text-wrapper
+        margin: 10px 10px
+    &__title
+        padding: 5px 0px
+        font-size: 25px
+        line-height: 30px
+        color: #7f8c8c
+        +bold
+    &__desc
+        font-size: 13px
+        line-height: 20px
+        font-weight: 400
+        color: #777777
+    &__button
+        min-width: 200px
+        padding: 15px 40px
+        margin: 10px 10px
+        border-radius: 6px
+        font-size: 20px
+        line-height: 24px
+        font-weight: 600
+        color: #ffffff
+        background-color: $color-secondary1
+        text-transform: uppercase
+        border-bottom: 4px solid $color-secondary2
+        cursor: pointer
+        &:hover
+            background-color: $color-secondary2
+        &-wrapper
+            margin: 10px 0px

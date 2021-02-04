@@ -291,6 +291,12 @@ h6, .h6 {
   font-weight: bold;
 }
 
+hr {
+  height: 3px;
+  background-color: #e5e6e6;
+  margin: 25px 0px;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,68 +362,6 @@ h6, .h6 {
   font-style: normal;
 }
 
-.typography {
-  background: #d2e0e0;
-}
-
-.typography-full {
-  padding: 40px 0;
-}
-
-.typography-full__title {
-  padding: 0px 0px 20px 0px;
-  font-size: 16px;
-  line-height: 19px;
-  color: #7f8c8c;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.typography-full__text {
-  font-size: 14px;
-  line-height: 22px;
-  color: #7f8c8c;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.typography-two {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 40px 0;
-}
-
-.typography-two__item {
-  width: 50%;
-}
-
-.typography-two__title {
-  padding: 0px 0px 20px 0px;
-  font-size: 16px;
-  line-height: 19px;
-  color: #7f8c8c;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.typography-two__text {
-  font-size: 14px;
-  line-height: 22px;
-  color: #7f8c8c;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .typography__body {
   padding: 20px 0;
 }
@@ -436,13 +380,136 @@ h6, .h6 {
   font-style: normal;
 }
 
-.typography__text {
+.typography__content {
   font-size: 14px;
   line-height: 22px;
   color: #7f8c8c;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.typography__content ul li {
+  font-size: 13px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #777777;
+}
+
+.typography__content ul li::before {
+  content: "♦";
+  margin-right: 5px;
+  font-size: 12px;
+  line-height: 1px;
+  font-weight: 900;
+  color: #61b8b0;
+  font-family: "Font Awesome 5 Pro";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+.typography__content .list-arrow li::before {
+  content: "\f061";
+  color: #e1524b;
+  font-family: "Font Awesome 5 Pro";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+.typography__content .list-times li::before {
+  content: "\f00d";
+  color: #e1524b;
+  font-family: "Font Awesome 5 Pro";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+.typography__content .list-circle-arrow li::before {
+  content: "\f138";
+  color: #61b8b0;
+  font-family: "Font Awesome 5 Pro";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+.typography__content .list-check li::before {
+  content: "\f00c";
+  color: #61b8b0;
+  font-family: "Font Awesome 5 Pro";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+}
+
+.infobox {
+  padding: 20px 0;
+}
+
+.infobox__body {
+  background-color: #ececec;
+  border-radius: 4px;
+  padding: 14px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.infobox__text-wrapper {
+  margin: 10px 10px;
+}
+
+.infobox__title {
+  padding: 5px 0px;
+  font-size: 25px;
+  line-height: 30px;
+  color: #7f8c8c;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.infobox__desc {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #777777;
+}
+
+.infobox__button {
+  min-width: 200px;
+  padding: 15px 40px;
+  margin: 10px 10px;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #e8756f;
+  text-transform: uppercase;
+  border-bottom: 4px solid #e2534b;
+  cursor: pointer;
+}
+
+.infobox__button:hover {
+  background-color: #e2534b;
+}
+
+.infobox__button-wrapper {
+  margin: 10px 0px;
 }
 
 .header {
