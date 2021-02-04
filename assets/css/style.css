@@ -161,6 +161,19 @@ main {
   background-color: #f3f3f3;
 }
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.col {
+  padding: 0 10px;
+}
+
 .col-1 {
   width: 100%;
 }
@@ -175,6 +188,23 @@ main {
 
 .col-4 {
   width: 25%;
+}
+
+.col-content {
+  width: 66.66666667%;
+}
+
+.col-sidebar {
+  width: 33.33333333%;
+}
+
+@media (max-width: 1024px) {
+  .col-content {
+    width: 100%;
+  }
+  .col-sidebar {
+    width: 100%;
+  }
 }
 
 /* Large desktops and laptops */
@@ -203,24 +233,24 @@ main {
   .main {
     background-color: #f3f3f3;
   }
+  .col-1, .row .col-3 {
+    width: 100%;
+  }
+  .col-2, .row .col-3 {
+    width: 100%;
+  }
+  .col-3, .row .col-3 {
+    width: 100%;
+  }
+  .col-4, .row .col-4 {
+    width: 100%;
+  }
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
   .main {
     background-color: #f3f3f3;
-  }
-  .col-1 {
-    width: 100%;
-  }
-  .col-2 {
-    width: 100%;
-  }
-  .col-3 {
-    width: 100%;
-  }
-  .col-4 {
-    width: 100%;
   }
 }
 
@@ -380,6 +410,33 @@ h6, .h6 {
 }
 
 .typography-two__text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #7f8c8c;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.typography__body {
+  padding: 20px 0;
+}
+
+.typography__item {
+  padding: 20px 20px;
+}
+
+.typography__title {
+  padding: 0px 0px 20px 0px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7f8c8c;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.typography__text {
   font-size: 14px;
   line-height: 22px;
   color: #7f8c8c;
